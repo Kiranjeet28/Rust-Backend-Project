@@ -1,0 +1,6 @@
+/target
+.idea
+/src/database/url_mongo_db.rs
+/src/private.rs
+img.png
+img_1.png
