@@ -1,6 +1,6 @@
 import { SparklesCore } from "../../UI/Components/sparkles";
 import { TextGenerateEffect } from "../../UI/Components/text-generate-effect";
-import BannerImage from "../../assets/Banner.png"
+import BannerImage from "../../../public/Banner.png"
 
 export default function Banner(){
     const words = `Dive into a World of Stories at Our Bookstore!
