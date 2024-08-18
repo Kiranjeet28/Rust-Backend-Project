@@ -6,8 +6,7 @@ import { Lamp } from '../Components/FrontPage/Lamp'
 import Card from '../Components/FrontPage/Card';
 
 function App() {
-  const base_url = import.meta.env.VITE_BASE_URL;
-  const api = import.meta.env.VITE_BOOK_API;
+
 
   return (
     <div className=''>

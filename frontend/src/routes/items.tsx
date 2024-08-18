@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { bookDetails } from '../Components/Reuseable/ApiQuery/bookDetails';
 import Loading from '../Components/Reuseable/Loading';
 import { Link } from 'react-router-dom'; 
-import AddCard from '../Components/Reuseable/AddCard/AddCard';
+
 import BasicButton from '../Components/Reuseable/Button/BasicButton';
 import logo from "../assets/Logo.png";
 import GradualSpacing from '../UI/Components/GradualSpacing';
