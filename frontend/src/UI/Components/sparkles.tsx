@@ -9,7 +9,7 @@ import { motion, useAnimation } from "framer-motion";
 type ParticlesProps = {
   id?: string;
   className?: string;
-  background?: string;
+  background?: string | any;
   particleSize?: number;
   minSize?: number;
   maxSize?: number;
@@ -54,14 +54,10 @@ export const SparklesCore = (props: ParticlesProps) => {
       {init && (
         <Particles
           id={id || "tsparticles"}
-          className={cn("h-full w-full")}
+          className={cn("h-full w-full ",background)}
           particlesLoaded={particlesLoaded}
           options={{
-            background: {
-              color: {
-                value: background || "#0d47a1",
-              },
-            },
+          
             fullScreen: {
               enable: false,
               zIndex: 1,

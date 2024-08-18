@@ -6,11 +6,11 @@ export default function Banner(){
 `;
     return(
      
-         <div className=" relative h-[57vh] w-full bg-no-repeat bg-cover bg-Banner  flex flex-col items-center justify-center overflow-hidden rounded-md">
+         <div className=" relative h-[57vh] w-full   flex flex-col items-center justify-center overflow-hidden rounded-md">
          <div className="w-full absolute inset-0 h-screen">
            <SparklesCore
              id="tsparticlesfullpage" 
-             background="transparent"
+             background='bg-no-repeat bg-cover bg-Banner h-screen'
              minSize={1.9}
              maxSize={2.9}
              particleDensity={100}
