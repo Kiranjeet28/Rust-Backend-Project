@@ -6,7 +6,6 @@ import { SearchBar } from './components/SearchBar';
 import Logo from '../Reuseable/Logo/Logo';
 import { useNavigate } from 'react-router-dom';
 import { UserDataContext } from '../../Context/UserDataProvider';
-
 export default function Navbar() {
   const navigate = useNavigate();
   const{ userData} = useContext(UserDataContext);

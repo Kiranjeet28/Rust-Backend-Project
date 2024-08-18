@@ -1,5 +1,6 @@
 import { SparklesCore } from "../../UI/Components/sparkles";
 import { TextGenerateEffect } from "../../UI/Components/text-generate-effect";
+import BannerImage from "../../assets/Banner.png"
 
 export default function Banner(){
     const words = `Dive into a World of Stories at Our Bookstore!
@@ -10,11 +11,11 @@ export default function Banner(){
          <div className="w-full absolute inset-0 h-screen">
            <SparklesCore
              id="tsparticlesfullpage" 
-             background='bg-no-repeat bg-cover bg-Banner h-screen'
+             background={BannerImage}
              minSize={1.9}
              maxSize={2.9}
              particleDensity={100}
-             className="w-full h-full"
+             className="w-full "
              particleColor="#D90166"
            />
          </div>
