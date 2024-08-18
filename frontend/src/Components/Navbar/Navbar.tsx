@@ -12,7 +12,7 @@ export default function Navbar() {
   const{ userData} = useContext(UserDataContext);
   console.log("context", userData)
   return (
-    <div className="bg-pink-50 fixed top-0 w-[100vw] h-[10vh] z-30">
+    <div className="bg-pink-50 fixed top-0 w-[100vw] h-[10vh] z-30 pr-3">
       <div className="flex justify-between items-center">
         <Logo />
         <SearchBar />

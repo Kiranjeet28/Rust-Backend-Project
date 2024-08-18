@@ -76,7 +76,7 @@ const Item: React.FC = () => {
       text={book.volumeInfo.title}
     />
          
-            <AddCard item={bookId as string}/>
+            {/* <AddCard item={bookId as string}/> */}
           </div>
           <p className="text-gray-700 font-bold text-md mb-2">
             By {book.volumeInfo.authors?.join(', ') || 'Unknown Author'}
