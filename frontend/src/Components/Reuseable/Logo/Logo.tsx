@@ -1,4 +1,4 @@
-import logo  from "../../../assets/Logo.png"
+import logo  from "../../../../public/Logo.png"
 export default function Logo(){
     return(
         <div className=" flex ">

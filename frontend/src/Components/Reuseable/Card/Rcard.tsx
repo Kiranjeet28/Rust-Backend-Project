@@ -1,5 +1,5 @@
 import { CardType } from '../../../types/Components';
-import logo from '../../../assets/Logo.png'
+import logo from '../../../../public/Logo.png'
 
 function Rcard({img,title,Author}:CardType){
 

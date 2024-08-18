@@ -5,7 +5,7 @@ import Loading from '../Components/Reuseable/Loading';
 import { Link } from 'react-router-dom'; 
 
 import BasicButton from '../Components/Reuseable/Button/BasicButton';
-import logo from "../assets/Logo.png";
+import logo from "../../public/Logo.png";
 import GradualSpacing from '../UI/Components/GradualSpacing';
 interface Book {
   // Define the structure of your book object here
