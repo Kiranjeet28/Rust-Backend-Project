@@ -25,19 +25,25 @@ function Card({ query }: { query: any }) {
   }, [query]);
 
   return (
-    <div className="flex flex-wrap justify-center gap-6" >
-      {isLoading ? ( 
-        <Loading/>
+    <div className="flex flex-wrap justify-center gap-6 px-2 sm:px-4 md:px-8">
+      {isLoading ? (
+      <Loading />
       ) : (
-        books.map((book: any) => (
-          <div key={book.id} className=" rounded-lg overflow-hidden max-w-xs w-full" onClick={()=>{navigate(`/items/${book.id}`)}}>
-            <Rcard
-              title={book.volumeInfo.title}
-              Author={book.volumeInfo.authors?.join(', ')}
-              img={book.volumeInfo.imageLinks?.thumbnail}
-            />
-          </div>
-        ))
+      books.map((book: any) => (
+        <div
+        key={book.id}
+        className="rounded-lg overflow-hidden w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xs flex-shrink-0 cursor-pointer transition-transform hover:scale-105"
+        onClick={() => {
+          navigate(`/items/${book.id}`);
+        }}
+        >
+        <Rcard
+          title={book.volumeInfo.title}
+          Author={book.volumeInfo.authors?.join(', ')}
+          img={book.volumeInfo.imageLinks?.thumbnail}
+        />
+        </div>
+      ))
       )}
     </div>
   );
